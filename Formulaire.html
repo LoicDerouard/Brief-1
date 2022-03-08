@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <form>
+        <div> <label>Nom</label>
+            <input id="Nom" name="Nom" placeholder="Dujardin" required>
+        </div> <br/>
+        <div>
+            <label>Prénom</label>
+            <input id="prénom" name="Prénom" placeholder="Jean" required>
+        </div> <br/>
+        <div>
+            <label>Age</label>
+            <input type="number" id="age" name="age"  placeholder="20" min="0" max="99" required>
+            <input type="date" name="Naissance">
+        </div> <br/>
+        <div>
+            <fieldset>
+            <legend>Sexe<abbr title="Ce champ est obligatoire"></abbr></legend>
+            <input type="radio" required name="Genre"  id="r1"  value="Monsieur"><label for="r1">Homme</label>
+            
+            <input type="radio" required name="Genre" id="r2" value="Madame"><label for="r2">Femme</label>
+
+            <input type="radio" required name="Genre" id="r3" value="Autre"><label for="r3">Autre</label>
+
+           </fieldset></div> <br/>
+           <div>  
+            <label>Pays</label>
+
+            <select name="Pays" id="Pays" required>
+                <option value="">Choisissez votre pays</option>
+                <option value="France">France</option>
+                <option value="Italie">Italie</option>
+                <option value="Angleterre">Angleterre</option>
+                <option value="Espagne">Espagne</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Etats-Unis">Etats-Unis</option>
+            </select>
+        </div> <br/>
+        <div>
+            <label>Ville</label>
+            <input id="ville" name="Ville" placeholder="Valenciennes" required>
+        </div> <br/>
+        <div>
+            <label>Code postal</label>
+            <input type="text" id="postal" name="amount" pattern="[0-9]{0,5}" placeholder="59192" required>
+        </div> <br/>
+        <div>
+            <label>Nationalité</label>
+            <input id="Nationalité" name="Nationalité" placeholder="Français" required>
+    </div> <br/>
+    <div>
+        <label>Numéro de sécurité sociale</label>
+        <input type="text" id="NuméroSecu" pattern="[0-9]{0,15}" placeholder="1 00 00 00 000 000 00" required>
+    </div> <br/>
+        <div>
+            <label>Adresse mail</label>
+            <input type="email" name="Mail" placeholder="JeanDujardin@hotmail.com" required>
+        </div> <br/>      
+        <div>
+                <label>Numéro de téléphone</label>
+                <input type="number" id="Tél" name="amount" placeholder="0636656565">
+        </div> <br/>        
+        <div>
+            <label>Métier</label>
+
+            <select name="métier" id="métier" required>
+                <option value="">Choisissez vote métier</option>
+                <option value="Développeur">Développeur</option>
+                <option value="Electricien">Electricien</option>
+                <option value="Maitre-chien">Maitre chien</option>
+            </select>
+        </div> <br/>
+        <div>
+                <label>Numéro du Passeport</label>
+                <input type="number" id="Passeport" placeholder="59RF05400" required>
+        </div> <br/>
+        <div>
+                <label>Date de déliverance du passeport</label>
+                <input type="date" name="date Passeport" required>
+        </div> <br/>
+        <div>
+                <label>Date de validité du passeport</label>
+                <input type="number" name="date-Passeport" min="1" max="12" placeholder="03" required>
+                <input type="number" name="date-Passeport" min="2020" max="2050" placeholder="2022" required>
+        </div> <br/>
+            
+    
+
+        <div><button> Envoyer </button> </div>
+        </form>
+    </body>
